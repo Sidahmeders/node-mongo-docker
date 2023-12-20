@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-mongo-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node-mongo-gke
+  template:
+    metadata:
+      labels:
+        app: node-mongo-gke
+    spec:
+      containers:
+      - name: node-mongo-gke
+        image: gcr.io/sodiumproject/node-mongo-gke_v2
+        ports:
+        - containerPort: 80
