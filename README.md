@@ -18,15 +18,16 @@ volumes: ['./:/usr/src/app']
 # To re-build
 docker-compose build
 ```
-   63  kubectl status
-   64  kubectl version
-   65  kubectl get nodes
-   66  kubectl get deployment
-  117  kubectl get endpoints
-  133  kubectl get pods
-  134  kubectl get services
-  135  kubectl apply -f services.yaml
-  138  kubectl apply -f deployment.yaml
-  142  kubectl logs node-mongo-deployment-5bff5cc488-4wmq2
-
-  
+## kubectl commands
+```
+kubectl status
+kubectl version
+kubectl get nodes
+kubectl get deployment
+kubectl get endpoints
+kubectl get pods
+kubectl get services
+kubectl apply -f services.yaml
+kubectl apply -f deployment.yaml
+kubectl logs node-mongo-deployment-5bff5cc488-4wmq2
+```
